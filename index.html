@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Structural Dashboard</title>
+  </head>
+  <body>
+    <div id="app">
+
+      <header class="header">
+
+        <h2>Structural Dashboard</h2>
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-input" />
+            <button type="button" class="search-button">Search</button>
+        </div>
+      </header>
+      <div class="dashboard">
+        <aside class="sidebar">
+           <h3>Structure</h3>
+          <p>Nodes</p>
+          <p>Elements</p>
+          <p>Layers</p>
+          <label class="sidebar-option">
+            <input id="show-sensor-numbers" type="checkbox" checked />
+            <span>Sensor numbers</span>
+          </label>
+        </aside>
+         <main id="viewport" class="viewport">
+          <div class="viewport-label">
+          3D Structural Model
+          </div>
+         </main>
+           <aside class="properties">
+          <h3>Properties</h3>
+          <p>Position</p>
+          <p>Dimensions</p>
+          <p>Coordinates</p>
+        </aside>
+      </div>
+
+       <footer class="footer">
+        Structural Model Viewer
+      </footer>
+
+
+    </div>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
